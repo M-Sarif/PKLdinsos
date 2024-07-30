@@ -1,0 +1,17 @@
+{
+    "name": "acero/admin",
+    "description": "dinsos",
+    "autoload": {
+        "psr-4": {
+            "Acero\\Admin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sarif"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1.0"
+    }
+}
