@@ -59,12 +59,12 @@ mysqli_close($mysqli);
                     <i class="fa-solid fa-plus me-2"></i> Entri Pengajuan
                 </a>
             </div>
-            <div class="col-lg-7 col-xl-9">
+            <!-- <div class="col-lg-7 col-xl-9">
                 <form action="?module=tampil_pencarian_pengajuan" method="post" class="form-search needs-validation" novalidate>
                     <input type="text" name="kata_kunci" class="form-control rounded-pill" placeholder="Cari Pengajuan ..." autocomplete="off" required>
                     <div class="invalid-feedback">Masukan Nomor KK atau tanggal pengajuan yang ingin Anda cari.</div>
                 </form>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -100,7 +100,7 @@ mysqli_close($mysqli);
                                 echo " (" . htmlspecialchars($data['pesan']) . ")";
                             }
                         } else {
-                            echo "Status Tidak Diketahui";
+                            echo "Belum Diverifikasi";
                         }
                         ?>
                         </td>

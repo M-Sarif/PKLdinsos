@@ -57,10 +57,15 @@ elseif ($_GET['module'] == 'form_entri_detailpengajuan') {
     // panggil file form entri pengajuan
     include "modules/pengajuan/anggota/form_entri.php";
 }
-// jika module yang dipilih "form_ubah_siswa"
+
 elseif ($_GET['module'] == 'form_ubah_pengajuan') {
     // panggil file form ubah pengajuan
     include "modules/pengajuan/form_ubah.php";
+}
+
+elseif ($_GET['module'] == 'form_ubah_anggota') {
+    // panggil file form ubah pengajuan
+    include "modules/pengajuan/anggota/form_ubah_anggota.php";
 }
 // jika module yang dipilih "tampil_detail_siswa"
 elseif ($_GET['module'] == 'tampil_detail_pengajuan') {
