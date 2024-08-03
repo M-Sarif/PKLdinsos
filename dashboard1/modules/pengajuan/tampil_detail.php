@@ -96,7 +96,7 @@ if (isset($_GET['id'])) {
                         <td><?php echo htmlspecialchars($data_pengajuan['rw']); ?></td>
                     </tr>
                     <tr>
-                        <td>Desa</td>
+                        <td>Desa/Kelurahan</td>
                         <td>:</td>
                         <td><?php echo htmlspecialchars($data_pengajuan['desa']); ?></td>
                     </tr>
@@ -136,16 +136,18 @@ if (isset($_GET['id'])) {
         <i class="fa-solid fa-list-ul me-2"></i> Detail Anggota
         <
     </div>
-    <div class="mb-5">
+    <!-- <div class="mb-5">
         <div class="d-grid gap-3 d-sm-flex flex-sm-row-reverse">
         <div class="d-grid gap-3 d-sm-flex">
-        <a href="?module=tambah_anggota&id=<?php echo $id_pengajuan; ?>" class="btn btn-outline-brand px-4">
+        <a href="?module=tambah_anggota&id=
+        <!-- <?php echo $id_pengajuan; ?> -->
+        <!-- " class="btn btn-outline-brand px-4">
         <i class="fa-regular fa-pen-to-square me-2"></i> tambah anggota
         </a>
             
         </div>
         
-    </div>
+    </div> --> 
 </div>
     <div class="d-flex flex-column flex-xl-row">
         <div class="flex-grow-1 text-muted fw-light ms-xl-5">

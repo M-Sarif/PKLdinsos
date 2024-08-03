@@ -60,7 +60,7 @@ if (isset($_GET['id'])) {
                     <input type="text" name="rw" class="form-control" value="<?php echo htmlspecialchars($data['rw']); ?>" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Desa <span class="text-danger">*</span></label>
+                    <label class="form-label">Desa/Kelurahan <span class="text-danger">*</span></label>
                     <input type="text" name="desa" class="form-control" value="<?php echo htmlspecialchars($data['desa']); ?>" required>
                 </div>
                 <div class="mb-3">

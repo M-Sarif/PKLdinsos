@@ -160,7 +160,7 @@ if (isset($_POST['simpan']) || isset($_POST['lanjut'])) {
                 <input type="text" name="rw" class="form-control" value="<?php echo isset($_SESSION['data_utama_temp']['rw']) ? htmlspecialchars($_SESSION['data_utama_temp']['rw']) : ''; ?>" required>
             </div>
             <div class="col-12 mb-3">
-                <label class="form-label">Desa <span class="text-danger">*</span></label>
+                <label class="form-label">Desa/Kelurahan <span class="text-danger">*</span></label>
                 <input type="text" name="desa" class="form-control" value="<?php echo isset($_SESSION['data_utama_temp']['desa']) ? htmlspecialchars($_SESSION['data_utama_temp']['desa']) : ''; ?>" required>
             </div>
             <div class="col-12 mb-3">
