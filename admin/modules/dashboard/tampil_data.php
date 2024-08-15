@@ -37,7 +37,7 @@ $result_terverifikasi = mysqli_query($mysqli, $query_terverifikasi);
 $total_terverifikasi = mysqli_fetch_assoc($result_terverifikasi)['total'];
 
 // Hitung total ditolak (status = 0)
-$query_ditolak = "SELECT COUNT(*) as total FROM verifikasi WHERE statuss = 0";
+$query_ditolak = "SELECT COUNT(*) as total FROM detail_pengajuan";
 $result_ditolak = mysqli_query($mysqli, $query_ditolak);
 $total_ditolak = mysqli_fetch_assoc($result_ditolak)['total'];
 
@@ -85,6 +85,21 @@ $total_pending = mysqli_fetch_assoc($result_pending)['total'];
             </div>
         </div>
 
+         <!-- Ditolak -->
+         <div class="col-lg-3">
+            <div class="bg-white rounded-4 shadow-sm p-4 p-lg-4-2 mb-4">
+                <div class="d-flex align-items-center justify-content-start">
+                    <div class="me-4">
+                        <i class="fa-solid fa-user icon-widget"></i>
+                    </div>
+                    <div>
+                        <p class="text-muted mb-1"><small>Total Anggota</small></p>
+                        <h5 class="fw-bold mb-0"><?php echo number_format($total_ditolak, 0, '', '.'); ?></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Terverifikasi -->
         <div class="col-lg-3">
             <div class="bg-white rounded-4 shadow-sm p-4 p-lg-4-2 mb-4">
@@ -100,20 +115,7 @@ $total_pending = mysqli_fetch_assoc($result_pending)['total'];
             </div>
         </div>
 
-        <!-- Ditolak -->
-        <div class="col-lg-3">
-            <div class="bg-white rounded-4 shadow-sm p-4 p-lg-4-2 mb-4">
-                <div class="d-flex align-items-center justify-content-start">
-                    <div class="me-4">
-                        <i class="fa-solid fa-times-circle icon-widget"></i>
-                    </div>
-                    <div>
-                        <p class="text-muted mb-1"><small>Ditolak</small></p>
-                        <h5 class="fw-bold mb-0"><?php echo number_format($total_ditolak, 0, '', '.'); ?></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Belum Diverifikasi -->
         <div class="col-lg-3">

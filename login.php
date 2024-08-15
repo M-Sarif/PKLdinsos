@@ -151,9 +151,9 @@
                                             </div>
                                             <div class="d-flex forgot-inner-area cmn-mb justify-content-between gap-2 flex-wrap align-items-center" style="margin-bottom: 20px;">
                                                 <div class="form-check checkmark-inner">
-                                                    <a href="#" class="form-check-label" for="flexCheckChecked">
+                                                    <!-- <a href="#" class="form-check-label" for="flexCheckChecked">
                                                         Forgot Your password?
-                                                    </a>
+                                                    </a> -->
                                                 </div>
                                                 <a href="#" class="forgot">
                                                     <!-- Content for the forgot password link if needed -->
